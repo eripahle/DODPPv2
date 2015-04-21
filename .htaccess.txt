@@ -1,0 +1,7 @@
+# Prevent Direct Access to files
+<FilesMatch "\.tpl|\.ini|\.log|\.txt)|\.php)">
+ Order deny,allow
+ Deny from all
+</FilesMatch>
+
+# Prevent direct access directory listening
